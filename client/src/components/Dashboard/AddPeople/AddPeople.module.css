@@ -1,0 +1,168 @@
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+
+.addPeopleModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    width: 500px; 
+    height: auto; 
+    padding: 40px; 
+    border-radius: 10.91px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.addPeopleModal h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px; 
+    font-weight: 900;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 5px; 
+}
+
+
+.addPeopleModal form input {
+    width: calc(100% - 40px); 
+    padding: 15px; 
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-left: 5px; 
+}
+
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+}
+
+
+.actions1, .actions2 {
+    flex: 1;
+    padding: 15px; 
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.actions1 {
+    border: 1px solid rgba(207, 54, 54, 1);
+    background-color: transparent;
+    width: 24rem;
+}
+
+
+.actions2 {
+    background-color: rgba(23, 162, 184, 1);
+}
+
+
+.cancelBtn {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(207, 54, 54, 1);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.addBtn {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  
+  .modalContent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    width: 500px; 
+    height: auto; 
+    padding: 40px; 
+    border-radius: 10.91px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  
+  .okayBtn {
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 20px;
+    position: relative;
+    left: 12rem;
+    
+  }
+  
+  .okayBtn:hover {
+    background-color: #138f9b;
+  }
+
+  .modalContent p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px; 
+    font-weight: 900;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+    margin-left: 80px; 
+  }
+  

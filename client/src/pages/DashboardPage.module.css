@@ -1,0 +1,15 @@
+.Dashboard {
+  display: flex;
+  height: 100vh;
+}
+.Sidebar {
+  flex: 0 0 auto;
+  width: 300px;
+  
+}
+.Content {
+  flex: 1;
+  
+  background-color: #fff;
+  content: 70%;
+}

@@ -1,0 +1,394 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 22px;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup button {
+  margin-bottom: 10px;
+  display: block;
+  appearance: none;
+}
+
+.popup h4 {
+  margin-top: 0;
+}
+
+.popup button {
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.priorityRow {
+  display: flex;
+  align-items: center;
+}
+
+.priorityRow label {
+  margin-right: 10px;
+  display: flex;
+}
+.priorityRow label h1 {
+  font-size: 24px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  color: rgba(32, 16, 43, 1);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  position: static;
+}
+.priorityButtons {
+  display: flex;
+  gap: 1rem;
+}
+.priorityButtons button {
+  background-color: transparent;
+
+  border: 1px solid rgba(226, 226, 226, 1);
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(118, 117, 117, 1);
+}
+
+.priorityButtons button:hover {
+  background-color: #f5f5f5;
+}
+
+.priorityButtons button.active {
+  background-color: rgba(238, 236, 236, 1);
+}
+.priorityButtons button img {
+  margin: 0 5px;
+}
+.icon {
+  font-size: 0.6em;
+  color: red;
+}
+
+.actionButtonsContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.icon {
+  font-size: 0.6em;
+  color: red;
+}
+.title {
+  display: flex;
+}
+.titleContainer {
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  font-size: 24px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  color: rgba(32, 16, 43, 1);
+
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  position: static;
+}
+.title .icon {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.titleContainer input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: rgba(77, 64, 85, 0.1);
+}
+
+
+.actionButtonsContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.actionButtonsContainer .cancel {
+  color: rgba(207, 54, 54, 1);
+  border: 1px solid rgba(207, 54, 54, 1);
+
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+.actionButtonsContainer .save {
+  background-color: rgba(23, 162, 184, 1);
+  color: rgba(255, 255, 255, 1);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+.actionButtonsContainer button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.actionButtonsContainer .save:hover {
+  background-color: rgb(12, 84, 94);
+}
+.actionButtonsContainer .cancel:hover {
+  background-color: rgba(224, 212, 212, 0.589);
+}
+.updateChecklist {
+  display: flex;
+}
+.updateChecklist h4 {
+  font-size: 24px;
+
+  margin-bottom: 4px;
+  color: rgba(32, 16, 43, 1);
+  margin-right: 8px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.updateChecklist .icon {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+.checklist {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid rgba(226, 226, 226, 1);
+  border-radius: 12px;
+  padding: 4px 10px 0 10px;
+
+  width: auto;
+}
+
+.checklist input[type="text"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: rgba(77, 64, 85, 0.1);
+  border: none;
+}
+.checklist input[type="text"]:focus {
+  outline: none;
+}
+.checklist input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 23px;
+  height: 23px;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 4px;
+  border: 2px solid rgba(226, 226, 226, 1);
+}
+.checklist input[type="checkbox"]:checked {
+  background-color: rgba(23, 162, 184, 1);
+  background-image: url("../../../assets/check.svg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+}
+.checklist input[type="checkbox"]:hover {
+  background-color: rgba(23, 162, 184, 1);
+  border: none;
+}
+.DatePicker {
+  width: 60%;
+}
+
+.checklistContainer {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.checklistContainer::-webkit-scrollbar {
+  position: relative;
+  width: 10px;
+}
+
+.checklistContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 183, 197, 1);
+  border-radius: 10px;
+}
+
+.checklistContainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(76, 93, 102);
+}
+
+.checklist button {
+  background-color: transparent;
+}
+.deleteIcon {
+  color: rgba(207, 54, 54, 1);
+}
+.checklistContainer button {
+  background-color: transparent;
+  color: rgba(118, 117, 117, 1);
+  font-family: sans-serif "Inter";
+  font-size: 16px;
+  font-weight: 550;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.checklistContainer button img {
+ margin-right: 5px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.assignToSection{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.assignToSection h4{
+    font-size: 24px;
+  margin-right: 10px; 
+  color: rgba(32, 16, 43, 1);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  justify-content: center;
+  white-space:nowrap;
+}
+.assignToSection input{
+  margin-left: 20px;
+  
+}
+
+.dropdownIcon {
+  position: absolute;
+  right: 10px; 
+  width: 16px; 
+  height: auto;
+  cursor: pointer;
+}
+
+
+.dropdownMenu {
+  position: absolute;
+  top: 50px; 
+  left: 108px;
+  width: 83.5%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px; 
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.emailIcon {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  color: #000;
+}
+
+.assignButtonn {
+  color: rgba(32, 16, 43, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+    cursor: pointer;
+}
+.assignButtonn:hover {
+  background-color: #ddd;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: pink; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  margin-right: 8px;
+}
+

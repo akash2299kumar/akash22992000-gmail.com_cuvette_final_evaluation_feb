@@ -1,0 +1,88 @@
+
+
+.sidebarContainer {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(237, 245, 254, 1);
+}
+
+.sidebar {
+  color: #ffffff;
+  padding: 20px 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sidebar div img {
+  margin-right: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  padding: 10px 80px;
+  cursor: pointer;
+  color: rgba(112, 112, 112, 1);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 100%; 
+}
+
+.sidebar li span img {
+  position: relative;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.logout {
+  margin-top: auto;
+  color: rgba(207, 54, 54, 1);
+  margin-bottom: 80px;
+}
+
+.sidebar li.active {
+  background-color: rgba(67, 145, 237, 0.1);
+  color: rgba(0, 0, 0, 1);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Dashboard {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  margin-bottom: 40px;
+  padding: 10px 80px;
+}
+.logout {
+  position: absolute;
+  bottom: -30px;
+  padding: 10px 80px;
+  display: flex;
+}
+.Dashboard {
+  display: flex;
+}
+.logout div span {
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}

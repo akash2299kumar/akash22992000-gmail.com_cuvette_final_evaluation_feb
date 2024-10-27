@@ -1,0 +1,123 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  width: 40%;
+}
+
+.loginContent {
+  width: 65%;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 2rem;
+  color: rgba(52, 52, 52, 1);
+  font-family: Open Sans;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  position: relative;
+  padding: 6px;
+ 
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input {
+  width: calc(100% - 78px); 
+  padding: 10px 40px 10px 35px; 
+  border: 2px solid rgba(208, 208, 208, 1);
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: rgba(130, 130, 130, 1);
+}
+
+.button {
+  color: #fff;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgba(23, 162, 184, 1);
+  font-family: Open Sans;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.button:hover {
+  background-color: rgb(16, 79, 88);
+}
+
+.link {
+  border: 2px solid rgba(23, 162, 184, 1);
+  padding: 10px 35px;
+  border-radius: 55px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.register {
+  text-decoration: none;
+  color: rgba(23, 162, 184, 1);
+  font-family: Open Sans;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+input::placeholder {
+  font-family: Open Sans;
+  font-size: 19px;
+  font-weight: 400;
+  position: relative;
+  left: 10px;
+  top: 2px;
+}
+
+.viewIcon {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accountText {
+  text-align: center;
+  color: rgba(130, 130, 130, 1);
+  font-family: Open Sans;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}

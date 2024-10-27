@@ -1,0 +1,47 @@
+/* MyDatePicker.css */
+
+.MyDatePicker {
+  position: relative;
+}
+
+.MyDatePicker .exampleCustomInput {
+  background-color: #800b0b;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  border: 2px solid aqua;
+}
+
+.MyDatePicker .exampleCustomInput.selected {
+  color: #333;
+}
+
+.MyDatePicker .exampleCustomInput:hover {
+  background-color: #f0f0f0;
+}
+
+.MyDatePicker .react-datepicker {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  z-index: 999;
+  top: calc(100% + 10px);
+  left: 0;
+  top: 500px;
+}
+
+.MyDatePicker .react-datepicker__header {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.MyDatePicker .react-datepicker__day--selected {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.MyDatePicker .react-datepicker__day:hover {
+  background-color: #f0f0f0;
+}
