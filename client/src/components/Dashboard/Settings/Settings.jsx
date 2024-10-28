@@ -86,7 +86,7 @@ const ChangePassword = () => {
   
       console.log("Request Body:", requestBody);
   
-      const response = await axios.post("http://localhost:5001/api/users/updateprofile", requestBody);
+      const response = await axios.post("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/users/updateprofile", requestBody);
       console.log(response.data);
   
       toast.success("Profile updated successfully!");
