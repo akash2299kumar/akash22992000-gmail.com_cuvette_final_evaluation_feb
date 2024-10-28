@@ -13,7 +13,7 @@ const cors = require("cors");
 // CORS configuration
 app.use(
   cors({
-    origin: ["http://localhost:5173"], 
+    origin: ["https://akash22992000-gmail-com-cuvette-final-evaluation-feb-client.vercel.app"], 
     methods:  ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   })
