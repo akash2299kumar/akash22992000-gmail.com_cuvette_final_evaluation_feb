@@ -13,7 +13,7 @@ const cors = require("cors");
 // CORS configuration
 app.use(
   cors({
-    origin: ["http://localhost:5173"], // Replace with your frontend URL
+    origin: ["http://localhost:5173"], 
     methods:  ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   })
@@ -53,5 +53,8 @@ app.post('/api/board/add-people', async (req, res) => {
   }
 });
 
+app.get('*', (req, res) => {
+  res.send("Hello from server.js");
+});
 
 app.listen(port, () => console.log(`Node server listening on port ${port}!`));
