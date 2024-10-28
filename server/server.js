@@ -10,7 +10,7 @@ const usersRoute = require("./routes/usersRoute");
 const boardRoutes = require("./routes/boardRoutes");
 const cors = require("cors");
 
-CORS configuration
+
 app.use(
   cors({
     origin: ["https://akash22992000-gmail-com-cuvette-final-evaluation-feb-client.vercel.app"], 
