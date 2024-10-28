@@ -16,7 +16,7 @@ function ProtectedRoute({ children }) {
 
       axios.defaults.headers.common["Authorization"] = token;
 
-      const response = await axios.post("http://localhost:5001/api/users/get-user-by-id");
+      const response = await axios.post("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/users/get-user-by-id");
 
       if (response.data.success) {
         setUser(response.data.data);
