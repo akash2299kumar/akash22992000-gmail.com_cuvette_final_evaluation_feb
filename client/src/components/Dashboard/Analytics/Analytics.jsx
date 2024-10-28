@@ -17,7 +17,7 @@ function Analytics() {
           return;
         }
 
-        const response = await axios.get("http://localhost:5001/api/board/task/analytics");
+        const response = await axios.get("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/task/analytics");
         setAnalyticsData(response.data);
         console.log(response.data);
       } catch (error) {
