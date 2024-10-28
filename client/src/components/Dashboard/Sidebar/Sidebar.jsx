@@ -23,7 +23,7 @@ function Sidebar({ handleSidebarOption }) {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:5001/api/users/logout");
+      await axios.post("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/users/logout");
       localStorage.removeItem("token");
       toast.success("Logout successful");
       window.location.href = "/login";
