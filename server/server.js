@@ -11,24 +11,24 @@ const boardRoutes = require("./routes/boardRoutes");
 const cors = require("cors");
 
 
-app.use(
-  cors({
-    origin: ["https://akash22992000-gmail-com-cuvette-final-evaluation-feb-client.vercel.app"], 
-    methods:  ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: ["https://akash22992000-gmail-com-cuvette-final-evaluation-feb-client.vercel.app"], 
+//     methods:  ['GET', 'POST', 'PUT', 'DELETE'],
+//     credentials: true,
+//   })
+// );
 
-// const frontendURL = 'https://akash22992000-gmail-com-cuvette-final-evaluation-feb-client.vercel.app';
+const frontendURL = 'https://akash22992000-gmail-com-cuvette-final-evaluation-feb-client.vercel.app';
 
-// app.use(cors({
-//   origin: frontendURL,
-//   credentials: true, // Enable this if you are sending cookies or authorization headers
-// }));
+app.use(cors({
+  origin: frontendURL,
+  credentials: true, // Enable this if you are sending cookies or authorization headers
+}));
 
 
 
-app.options("*", cors());
+// app.options("*", cors());
 
 app.use(express.json());
 app.use("/api/users", usersRoute);
