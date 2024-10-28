@@ -18,7 +18,7 @@ const AddPeople = ({ onCancel, onAddPeople }) => {
     try {
       const token = localStorage.getItem('token');
       axios.defaults.headers.common['Authorization'] = token;
-      await axios.post('http://localhost:5001/api/board/add-people', { email });
+      await axios.post('https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/add-people', { email });
       
       console.log('Email added');
       onAddPeople(email); 
