@@ -12,7 +12,7 @@ function SharePage() {
   useEffect(() => {
     const fetchCardDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/api/board/task/${cardId}`);
+        const response = await axios.get(`https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/task/${cardId}`);
         setCardDetails(response.data);
       } catch (error) {
         console.error("Error fetching card details:", error);
