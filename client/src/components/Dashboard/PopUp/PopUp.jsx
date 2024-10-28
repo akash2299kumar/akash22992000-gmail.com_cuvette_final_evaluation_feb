@@ -32,7 +32,7 @@ function PopUp({ onSave, onCancel, editableCard }) {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5001/api/board/getAllUsers");
+      const response = await axios.get("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/getAllUsers");
       setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);
@@ -99,12 +99,12 @@ function PopUp({ onSave, onCancel, editableCard }) {
 
       if (editableCard) {
         const response = await axios.put(
-          `http://localhost:5001/api/board/task/${editableCard._id}`,
+          `https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/task/${editableCard._id}`,
           newTask
         );
         onSave(response.data);
       } else {
-        const response = await axios.post("http://localhost:5001/api/board/task", newTask);
+        const response = await axios.post("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/task", newTask);
         onSave(response.data);
       }
 
