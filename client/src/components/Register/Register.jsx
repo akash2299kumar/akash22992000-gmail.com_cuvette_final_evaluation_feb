@@ -43,7 +43,7 @@ const Register = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5001/api/users/register", formData);
+      const response = await axios.post("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/users/register", formData);
       console.log(response.data);
      
       toast.success("User registered successfully!");
