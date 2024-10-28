@@ -91,7 +91,7 @@ function Board() {
           return;
         }
 
-        const response = await axios.get("http://localhost:5001/api/board/task", {
+        const response = await axios.get("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/task", {
           params: { filterOption },
         });
 
@@ -119,7 +119,7 @@ function Board() {
       const token = localStorage.getItem("token");
       axios.defaults.headers.common["Authorization"] = token;
 
-      await axios.delete(`http://localhost:5001/api/board/task/${id}`);
+      await axios.delete(`https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/task/${id}`);
 
       setCards((prevCards) => {
         const updatedCards = { ...prevCards };
@@ -172,7 +172,7 @@ function Board() {
         const token = localStorage.getItem("token");
         axios.defaults.headers.common["Authorization"] = token;
         movedCard.status = targetColumn;
-        await axios.put(`http://localhost:5001/api/board/task/${id}`, movedCard);
+        await axios.put(`https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/task/${id}`, movedCard);
       } else {
         Object.keys(updatedCards).forEach((col) => {
           const index = updatedCards[col].findIndex((card) => card.id === id);
