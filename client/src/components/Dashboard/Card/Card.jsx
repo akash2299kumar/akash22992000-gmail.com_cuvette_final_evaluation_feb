@@ -99,7 +99,7 @@ function Card({
 
   const generateCardDetailsUrl = () => {
     const cardId = encodeURIComponent(card._id);
-    const baseUrl = "https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/board/task";
+    const baseUrl = "https://akash22992000-gmail-com-cuvette-final-evaluation-feb-client.vercel.app/share";
 
     const url = `${baseUrl}/${cardId}`;
     return url;
