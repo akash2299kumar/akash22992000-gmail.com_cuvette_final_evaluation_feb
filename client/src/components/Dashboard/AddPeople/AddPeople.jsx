@@ -15,6 +15,13 @@ const AddPeople = ({ onCancel, onAddPeople }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.warning('Please enter a valid email address.');
+      return;
+    }
+
+
     try {
       const token = localStorage.getItem('token');
       axios.defaults.headers.common['Authorization'] = token;
