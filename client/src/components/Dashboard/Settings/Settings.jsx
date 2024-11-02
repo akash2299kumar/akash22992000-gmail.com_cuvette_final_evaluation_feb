@@ -100,7 +100,7 @@ const ChangePassword = () => {
       console.log(response.data);
   
       toast.success("Profile updated successfully!");
-      navigate("/");
+      navigate("/login");
     } catch (error) {
       console.error("Error:", error.response ? error.response.data : error.message);
       setError(error.response ? error.response.data.message : "Profile update failed. Please try again later.");
