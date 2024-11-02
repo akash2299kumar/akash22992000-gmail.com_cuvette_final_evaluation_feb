@@ -77,6 +77,7 @@ router.post("/login", async (req, res) => {
       success: true,
       token: token,
       name: userExists.name,
+      email: userExists.email,
     });
   } catch (error) {
     res.send({
