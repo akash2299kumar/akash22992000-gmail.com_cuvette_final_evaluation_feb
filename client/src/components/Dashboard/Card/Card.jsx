@@ -33,6 +33,7 @@ function Card({
   const [showDeletePopup, setShowDeletePopup] = useState(false);
   const [showDeletePop, setShowDeletePop] = useState(false);
   const [showFullTitle, setShowFullTitle] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const handleOptionsToggle = () => {
     setShowOptions(!showOptions);
@@ -158,17 +159,30 @@ function Card({
               </div>
             )}
           </div>
-          <h4
-  style={{
-    whiteSpace: showFullTitle ? 'normal' : 'nowrap',
-    overflow: showFullTitle ? 'visible' : 'hidden',
-    textOverflow: 'ellipsis',
-    cursor: 'pointer'
-  }}
-  onClick={() => setShowFullTitle(!showFullTitle)} // Toggle full title on click
->
-  {card.title}
-</h4>
+           <div className="title-container" style={{ position: 'relative' }}>
+      <div
+        className={styles.titlebox}
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+      >
+        <h4
+          style={{
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            cursor: 'pointer',
+          }}
+        >
+          {card.title}
+        </h4>
+      </div>
+
+      {showTooltip && (
+        <div className={styles.tooltipbox}>
+          {card.title}
+        </div>
+      )}
+      </div>
 
           <div className={styles.checklistContainer}>
             <div className={styles.checklistInfo}>
