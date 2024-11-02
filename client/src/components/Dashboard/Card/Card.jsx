@@ -208,7 +208,7 @@ function Card({
             <div>
               {showChecklist && (
                 <div className={styles.checklistItemContainer}>
-                  <ul className={styles.checklist}>
+                  <ul style={{width: '100%'}} className={styles.checklist}>
                     {card.checklist.map((item, index) => (
                       <li key={index}>
                         <div className={styles.checklistItem}>
