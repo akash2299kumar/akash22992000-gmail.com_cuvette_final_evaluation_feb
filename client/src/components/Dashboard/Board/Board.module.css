@@ -24,7 +24,7 @@
 
 .verticalScrollbar {
   overflow-y: scroll;
-  height: 60vh;
+  height: 58vh;
 }
 .verticalScrollbar::-webkit-scrollbar {
   height: 2px;
@@ -75,7 +75,7 @@
 .dropdownIcon {
   position: absolute;
   top: 43%;
-  right: -10px;
+  right: 10px;
   transform: translateY(-50%);
 }
 
@@ -112,7 +112,6 @@
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 30px;
   margin-top: 10px;
 }
 
@@ -217,3 +216,8 @@
 .addPeopleText:hover {
   color: #000; 
 }
+.rightSection{
+  position: relative;
+  right: 6%;
+}
+
