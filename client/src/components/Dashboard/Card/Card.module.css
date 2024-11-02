@@ -229,6 +229,37 @@
 }
 
 
+.titlebox {
+  width: 95%;
+  padding: 8px;
+}
+
+.tooltipbox {
+  position: absolute;
+  top: 100%; /* Position it below the title box */
+  left: 0;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  width: max-content;
+  max-width: 300px;
+  z-index: 10;
+  white-space: normal;
+  margin-top: 5px;
+  max-width: calc(100% - 30px); 
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.checklistItem span {
+  max-width: calc(100% - 30px); 
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
 
 
 
