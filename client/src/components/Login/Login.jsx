@@ -40,10 +40,12 @@ const Login = () => {
         const token = response.data.token;
         
         const name = response.data.name;
+         const email = response.data.email;
 
       
         localStorage.setItem("token", token);
         localStorage.setItem("name", name);
+          localStorage.setItem("email", email);
 
        
         navigate("/");
