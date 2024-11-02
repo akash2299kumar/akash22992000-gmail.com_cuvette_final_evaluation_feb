@@ -68,7 +68,7 @@ const ChangePassword = () => {
   //   }
   // };
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
   
     // Ensure at least one field is provided for the update
     if (!name && !email && (!oldPassword || !newPassword)) {
@@ -96,16 +96,27 @@ const ChangePassword = () => {
   
       console.log("Request Body:", requestBody);
   
-      const response = await axios.post("https://akash22992000-gmail-com-cuvette-final-evaluation-feb-server.vercel.app/api/users/updateprofile", requestBody);
+      const response = await axios.post("/api/users/updateprofile", requestBody);
       console.log(response.data);
   
       toast.success("Profile updated successfully!");
-      navigate("/login");
+  
+      
+      if (email || (oldPassword && newPassword)) {
+        localStorage.removeItem("token"); 
+        localStorage.removeItem("name"); 
+        localStorage.removeItem("email");
+        toast.info("Please log in again with your updated credentials.");
+        navigate("/login"); 
+      } else {
+        navigate("/"); 
+      }
     } catch (error) {
       console.error("Error:", error.response ? error.response.data : error.message);
       setError(error.response ? error.response.data.message : "Profile update failed. Please try again later.");
     }
   };
+  
   
 
   return (
