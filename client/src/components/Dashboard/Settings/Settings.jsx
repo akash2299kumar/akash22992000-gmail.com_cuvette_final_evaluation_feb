@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -23,6 +23,16 @@ const ChangePassword = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showPassword1, setShowPassword1] = useState(false);
   const { name, email,  oldPassword, newPassword } = formData;
+
+   useEffect(() => {
+    const savedName = localStorage.getItem("name");
+    const savedEmail = localStorage.getItem("email");
+    setFormData((prevData) => ({
+      ...prevData,
+      name: savedName || "",
+      email: savedEmail || "",
+    }));
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
