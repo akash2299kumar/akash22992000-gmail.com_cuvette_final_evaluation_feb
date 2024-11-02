@@ -332,6 +332,7 @@ function PopUp({ onSave, onCancel, editableCard }) {
               onChange={handleDateChange}
               placeholderText="Select Due Date"
               dateFormat="dd/MM/yyyy"
+               minDate={new Date()}
               className={styles.DatePicker}
             />
           </div>
