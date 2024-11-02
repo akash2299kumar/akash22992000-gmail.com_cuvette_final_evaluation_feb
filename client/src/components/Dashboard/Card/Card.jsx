@@ -82,14 +82,14 @@ function Card({
     }
   };
   const isOverdue = (dueDate) => {
-    const currentDate = new Date().getTime();
-    const dueDateTime = new Date(dueDate).getTime();
-
-    if (dueDateTime < currentDate) {
-      return true;
-    } else {
-      return false;
-    }
+    const currentDate = new Date();
+    const dueDateObj = new Date(dueDate);
+  
+    // Set time to midnight for both dates to compare only the date
+    currentDate.setHours(0, 0, 0, 0);
+    dueDateObj.setHours(0, 0, 0, 0);
+  
+    return dueDateObj < currentDate; // True if due date is before today
   };
 
   const copyCardDetailsUrl = () => {
@@ -231,21 +231,17 @@ function Card({
         <div className={styles.statusButtonContainer}>
           <div className={styles.dueDateContainer}>
             {card.dueDate !== null && (
-              <div
-                className={`${styles.dueDate} ${
-                  isOverdue(card.dueDate) && currentColumn !== "done"
-                    ? styles.overdue
-                    : ""
-                } ${currentColumn === "done" ? styles.doneColumn : ""} ${
-                  currentColumn === "done" ? styles.doneDueDate :
-                  card.priority === "high" ? styles.highPriority :
-                  // card.priority === "moderate" ? styles.moderatePriority :
-                  // card.priority === "low" ? styles.lowPriority :
-                  ""
-                }`}
-              >
-                {formatDate(card.dueDate)}
-              </div>
+             <div
+             className={`${styles.dueDate} ${
+               isOverdue(card.dueDate) && currentColumn !== "done"
+                 ? styles.overdue 
+                 : ""
+             } ${card.priority === "high" && !isOverdue(card.dueDate) ? styles.highPriority : ""} ${
+               currentColumn === "done" ? styles.doneColumn : ""
+             } ${currentColumn === "done" ? styles.doneDueDate : ""}`}
+           >
+             {formatDate(card.dueDate)}
+           </div>
             )}
           </div>
 
